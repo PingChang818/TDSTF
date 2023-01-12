@@ -1,0 +1,19 @@
+
+#type: args
+
+train:
+  epochs: 200
+  batch_size: 32 
+  lr: 1.0e-3 
+
+diffusion:
+  size: 60 
+  layers: 3 
+  channels: 128 
+  nheads: 8 
+  time_points: 40 
+  diffusion_embedding_dim: 128
+  time_embedding_dim: 128
+  beta_start: 0.0001
+  beta_end: 0.5
+  num_steps: 50
