@@ -1,4 +1,3 @@
-# Inspired by CSDI [10]
 import argparse
 import torch
 import datetime
