@@ -1,5 +1,5 @@
 # TDSTF
-This is the github repository for the paper "A Transformer-based Diffusion Probabilistic Model for Heart Rate and Blood Pressure Forecasting in Intensive Care Unit"(https://arxiv.org/abs/2301.06625)
+This is the github repository for the paper "A Transformer-based Diffusion Probabilistic Model for Heart Rate and Blood Pressure Forecasting in Intensive Care Unit" (https://arxiv.org/abs/2301.06625)
 
 # MIMIC-III data
 Download the dataset at https://physionet.org/content/mimiciii/1.4/
