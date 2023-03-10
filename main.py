@@ -38,6 +38,6 @@ else:
     model.load_state_dict(torch.load('./save/' + args.modelfolder + '/model.pth'))
 
 print('test')
-CRPS, MSE = evaluate(1, model, test_loader, nsample=args.nsample, foldername=foldername)
-print('CRPS: {}'.format(CRPS))
+NACRPS, MSE = evaluate(1, model, test_loader, nsample=args.nsample, foldername=foldername)
+print('NACRPS: {}'.format(NACRPS))
 print('MSE: {}'.format(MSE))
