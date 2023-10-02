@@ -5,7 +5,11 @@ This is the github repository for the paper "A Transformer-based Diffusion Proba
 Download the dataset at https://physionet.org/content/mimiciii/1.4/
 
 # Data preprocessing
-Run the files step_1.py through step_4.py in order in the folder "preprocess"
+Create empty folders: "/save", "/preprocess/data/MIMICIII", "/preprocess/data", and "/preprocess/data/first"
+
+Download the MIMIC-III data to "/preprocess/data/MIMICIII"
+
+Run the files step_1.py through step_4.py in order in the folder "/preprocess"
 
 # Experiments
 Run the file main.py
