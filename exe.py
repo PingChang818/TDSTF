@@ -12,7 +12,7 @@ def train(
     valid_epoch_interval=10,
     foldername='',
 ):
-    optimizer = Adam(model.parameters(), lr=config['train']['lr'], weight_decay=1e-6)
+    optimizer = Adam(model.parameters(), lr=config['train']['lr'], weight_decay=5e-8)
     if foldername != '':
         output_path = foldername + '/model.pth'
     m = []
@@ -45,10 +45,11 @@ def train(
                 )
                 
             lr_scheduler.step()
-        if valid_loader is not None and (epoch_no + 1) % valid_epoch_interval == 0 and epoch_no > int((config['train']['epochs']) / 2 - 5):
+        if valid_loader is not None and (epoch_no + 1) % valid_epoch_interval == 0 and epoch_no > 135:
             model.eval()
             CRPS_valid, _ = evaluate(0, model, valid_loader, nsample=5, foldername=foldername)
-            print('best: {}_current: {}'.format(best_valid_loss, CRPS_valid))
+            print('{} (best)'.format(round(best_valid_loss, 4)))
+            print('{} (current)'.format(round(CRPS_valid, 4)))
             if best_valid_loss > CRPS_valid:
                 ct = 0
                 best_valid_loss = CRPS_valid
