@@ -57,7 +57,7 @@ def train(
                 print('model updated')
             else:
                 ct += 1
-                print('ct: {}'.format(ct))
+                print('count: {}'.format(ct))
             # earlystopping
             if ct > 2:
                 model.load_state_dict(torch.load(output_path))
