@@ -2,10 +2,17 @@
 This is the github repository for the paper "A Transformer-based Diffusion Probabilistic Model for Heart Rate and Blood Pressure Forecasting in Intensive Care Unit" (https://arxiv.org/abs/2301.06625)
 
 # MIMIC-III data
-Download the dataset at https://physionet.org/content/mimiciii/1.4/
+Download the dataset at
+
+https://physionet.org/content/mimiciii/1.4/
+
+# Environment
+[Anaconda3-2023.03-0-Windows-x86_64](https://repo.anaconda.com/archive/)
+
+[Pytorch=2.1.1 + cuda=11.8](https://pytorch.org/)
 
 # Data preprocessing
-Create empty folders: "/save", "/preprocess/data/MIMICIII", "/preprocess/data", and "/preprocess/data/first"
+Create empty folders: "/save", "/preprocess/data", "/preprocess/data/MIMICIII", and "/preprocess/data/first"
 
 Download the MIMIC-III data to "/preprocess/data/MIMICIII"
 
